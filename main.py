@@ -19,7 +19,6 @@ st.set_page_config(
 st.title('Sentiment analizlere göre yapılan Time Series çalışmasının en iyi metriklere sahip modellerinin karşılaştırılması')
 
 
-allscores = pd.read_csv("data/all_results.csv",index_col=0)
 st.subheader('Time Series Analysis')
 
 st.subheader('Kullanılan 3 farklı modelin özet bilgileri')
