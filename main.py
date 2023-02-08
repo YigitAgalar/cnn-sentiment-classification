@@ -62,17 +62,3 @@ rbct_convlstm.summary()
    
 ''')
 
-
-st.subheader('En iyi çalışan 2 model')
-
-st.write(allscores[allscores["r2"]==allscores["r2"].max()])
-
-
-st.write(allscores[(allscores["mae"]==allscores["mae"].min())])
-
-
-
-
-st.subheader('En iyi 2 modelin tahmin grafikleri')
-st.image('img/fbct_hyb_ts_pred.png')
-st.image('img/rbct_cnn_ts_pred.png')
