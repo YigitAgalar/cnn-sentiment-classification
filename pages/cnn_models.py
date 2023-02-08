@@ -34,6 +34,19 @@ st.write('Y Train Shape (55858, 3)')
 st.write('Y Validation Shape (6983, 3) ')
 st.write('Y Test Shape (6982, 3)')
 
+st.subheader("train parameters")
+st.code('''
+early_stopping = EarlyStopping(monitor='val_loss', verbose=1 ,patience=1, mode='min')
+
+
+#train model
+history = model_tf2.fit(X_train, y_train,
+                    batch_size=128,
+                    epochs=5,
+                    validation_data=(X_val, y_val),
+                    verbose=1,
+                    callbacks=[early_stopping])
+ ''')
 
 st.subheader('model 1 ')
 st.code(''' model_tf = Sequential()
