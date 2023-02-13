@@ -81,7 +81,7 @@ st.image('img_graph/m2_wv_bn.png')
 
 
 
-st.subheader('128-128-32 nobn')
+st.subheader('128-128-32 bn')
 st.code('''
 #build model
 model_tf7_nobn = Sequential()
@@ -109,7 +109,7 @@ model_tf7_nobn.summary()
 
 
 
-st.subheader('128-128-32 bn')
+st.subheader('128-128-32 no bn')
 st.code('''
 #build model
 model_tf7_nobn = Sequential()
