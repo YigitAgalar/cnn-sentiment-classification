@@ -40,4 +40,5 @@ model3wv = pd.DataFrame({"wv nbn loss":0.1829 , "wv nbn acc": 0.9402,"wv bn loss
 
 st.dataframe(model3)
 st.dataframe(model3wv)
+st.image('img_graph/12864_bn_full.png')
 
