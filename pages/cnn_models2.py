@@ -133,3 +133,9 @@ model_tf7_nobn.summary()
 ''')
 
 
+model2= pd.DataFrame({'tfidf loss' : 0.1735 , 'tfidf acc': 0.9407,'tfidf bn loss' : 0.2367 , 'tfidf bn acc': 0.9318},index=[0])
+model2wv = pd.DataFrame({"wv nbn loss":0.1898 , "wv nbn acc": 0.9348,"wv bn loss":0.2224 , "wv bn acc": 0.9189},index=[0])
+
+st.dataframe(model2)
+st.dataframe(model2wv)
+
