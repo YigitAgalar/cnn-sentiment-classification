@@ -147,7 +147,7 @@ st.image('img_graph/m3_tf_bn.png')
 st.subheader('model 2 nbn wavelet')
 st.image('img_graph/m3_wv_nbn.png')
 st.subheader('model 2 bn wavelet')
-st.image('img_graph/my3_wv_bn.png')
+st.image('img_graph/m3_wv_bn.png')
 st.dataframe(model3)
 st.dataframe(model3wv)
 
