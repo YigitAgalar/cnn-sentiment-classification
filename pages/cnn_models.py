@@ -34,8 +34,7 @@ st.write('Y Test Shape (6982, 3)')
 
 st.subheader("train parameters")
 st.code('''
-early_stopping = EarlyStopping(monitor='val_loss', verbose=1 ,patience=1, mode='min')
-
+early_stopping = EarlyStopping(monitor='val_loss', verbose=1 ,patience=2, mode='min',restore_best_weights=True)
 
 #train model
 history = model_tf1.fit(X_train, y_train,
@@ -45,6 +44,8 @@ history = model_tf1.fit(X_train, y_train,
                     verbose=1,
                     callbacks=[early_stopping])
  ''')
+
+st.subheader("bn -> batch normalization  / nbn -> no batch normalization")
 
 st.subheader('model 1 bn')
 st.code('''
