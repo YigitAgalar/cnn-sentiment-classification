@@ -143,7 +143,7 @@ st.dataframe(model2wv)
 st.subheader('tfidf nbn')
 st.image('img_graph/m8tfnbnfull.png')
 st.subheader('tfidf bn')
-st.image('img_graph/m8tfbnfull.png')
+st.image('img_graph/m8tfbngfull.png')
 
 st.subheader('wv nbn')
 st.image('img_graph/m8wvnbnfull.png')
