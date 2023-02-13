@@ -46,3 +46,6 @@ st.image('img_graph/12864_bn_full.png')
 
 st.subheader('tfidf nbn')
 st.image('img_graph/12864_nobn_full.png')
+
+st.subheader('wv nbn')
+st.image('img_graph/12864_wv_nobn_full.png')
