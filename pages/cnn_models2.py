@@ -77,3 +77,59 @@ st.image('img_graph/12864_wv_nobn_full.png')
 
 st.subheader('wv bn')
 st.image('img_graph/m2_wv_bn.png')
+
+
+
+
+st.subheader('128-128-32 nobn')
+st.code('''
+#build model
+model_tf7_nobn = Sequential()
+model_tf7_nobn.add(Conv1D(128, 1, activation='relu', input_shape=(1,X_train.shape[2])))
+model_tf7.add(BatchNormalization())
+model_tf7_nobn.add(MaxPooling1D(1))
+model_tf7_nobn.add(Dropout(0.2))
+model_tf7_nobn.add(Conv1D(128, 1, activation='relu'))
+model_tf7.add(BatchNormalization())
+model_tf7_nobn.add(MaxPooling1D(1))
+model_tf7_nobn.add(Dropout(0.2))
+model_tf7_nobn.add(Conv1D(32, 1, activation='relu'))
+model_tf7.add(BatchNormalization())
+model_tf7_nobn.add(MaxPooling1D(1))
+model_tf7_nobn.add(Flatten())
+model_tf7_nobn.add(Dense(3, activation='softmax'))
+
+model_tf7_nobn.compile(loss='categorical_crossentropy',
+                optimizer='adam',
+                metrics=['accuracy'])
+
+model_tf7_nobn.summary()
+
+''')
+
+
+
+st.subheader('128-128-32 bn')
+st.code('''
+#build model
+model_tf7_nobn = Sequential()
+model_tf7_nobn.add(Conv1D(128, 1, activation='relu', input_shape=(1,X_train.shape[2])))
+model_tf7_nobn.add(MaxPooling1D(1))
+model_tf7_nobn.add(Dropout(0.2))
+model_tf7_nobn.add(Conv1D(128, 1, activation='relu'))
+model_tf7_nobn.add(MaxPooling1D(1))
+model_tf7_nobn.add(Dropout(0.2))
+model_tf7_nobn.add(Conv1D(32, 1, activation='relu'))
+model_tf7_nobn.add(MaxPooling1D(1))
+model_tf7_nobn.add(Flatten())
+model_tf7_nobn.add(Dense(3, activation='softmax'))
+
+model_tf7_nobn.compile(loss='categorical_crossentropy',
+                optimizer='adam',
+                metrics=['accuracy'])
+
+model_tf7_nobn.summary()
+
+''')
+
+
