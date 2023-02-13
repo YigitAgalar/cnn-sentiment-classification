@@ -139,6 +139,12 @@ model2wv = pd.DataFrame({"wv nbn loss":0.1898 , "wv nbn acc": 0.9348,"wv bn loss
 st.dataframe(model2)
 st.dataframe(model2wv)
 
+
+st.subheader('tfidf nbn')
+st.image('img_graph/m8tfnbnfull.png')
+st.subheader('tfidf bn')
+st.image('img_graph/m8tfbnfull.png')
+
 st.subheader('wv nbn')
 st.image('img_graph/m8wvnbnfull.png')
 st.subheader('wv bn')
