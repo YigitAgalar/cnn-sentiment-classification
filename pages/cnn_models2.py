@@ -12,7 +12,7 @@ st.set_page_config(
 
 st.header("13-02-2023")
 
-st.subheader('128-64-32')
+st.subheader('128-64-32 no batch normalization')
 st.code('''
 #build model
 modelwv2 = Sequential()
@@ -32,6 +32,31 @@ modelwv2.compile(loss='categorical_crossentropy',
                 metrics=['accuracy'])
 
 modelwv2.summary()
+
+''')
+
+st.subheader('128-64-32 batch normalization')
+st.code('''
+model_tf_bn = Sequential()
+model_tf_bn.add(Conv1D(128, 1, activation='relu', input_shape=(1,X_train.shape[2])))
+model_tf_bn.add(BatchNormalization())
+model_tf_bn.add(MaxPooling1D(1))
+model_tf_bn.add(Dropout(0.5))
+model_tf_bn.add(Conv1D(64, 1, activation='relu'))
+model_tf_bn.add(BatchNormalization())
+model_tf_bn.add(MaxPooling1D(1))
+model_tf_bn.add(Dropout(0.5))
+model_tf_bn.add(Conv1D(32, 1, activation='relu'))
+model_tf_bn.add(BatchNormalization())
+model_tf_bn.add(MaxPooling1D(1))
+model_tf_bn.add(Flatten())
+model_tf_bn.add(Dense(3, activation='softmax'))
+
+model_tf_bn.compile(loss='categorical_crossentropy',
+                optimizer='adam',
+                metrics=['accuracy'])
+
+model_tf_bn.summary()
 
 ''')
 
