@@ -15,7 +15,20 @@ st.set_page_config(
 st.title('feature vectorlerin ortalama değerlerinin dağılımı')
 
 
+st.subheader('X ekseni featurelarımız')
+st.subheader('Y ekseni ortalama tfidf ve wavelet değerlerimiz')
 st.subheader('wavelet feature distribution')
 st.image('img/waveletdist.png')
 st.subheader('tfidf featrue distribution')
 st.image('img/tfidfdist.png')
+
+
+
+st.subheader('x ekseni featurelarımız')
+st.subheader('y ekseni non-zero frekansları')
+
+st.subheader('wavelet feature distribution')
+st.image('img/waveletdistfreq.png')
+
+st.subheader('tfidf featrue distribution')
+st.image('img/tfidfdistfreq.png')
