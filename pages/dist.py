@@ -10,6 +10,11 @@ st.set_page_config(
     page_icon="👋",
 )
 
+
+
+st.title('feature vectorlerin ortalama değerlerinin dağılımı')
+
+
 st.subheader('wavelet feature distribution')
 st.image('img/waveletdist.png')
 st.subheader('tfidf featrue distribution')
