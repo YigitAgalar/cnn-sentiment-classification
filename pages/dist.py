@@ -28,7 +28,7 @@ st.subheader('x ekseni featurelarımız')
 st.subheader('y ekseni non-zero frekansları')
 
 st.subheader('wavelet feature distribution')
-st.image('img/waveletdistfreq.png')
+st.image('img/waveletdistfreq2.png')
 
 st.subheader('tfidf featrue distribution')
-st.image('img/tfidfdistfreq.png')
+st.image('img/tfidfdistfreq2.png')
