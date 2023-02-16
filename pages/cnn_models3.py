@@ -29,7 +29,7 @@ model_wv7d.summary()
 st.subheader('CNN1 Wavelet graphs')
 st.image('cnn_img/model_cnn1_full.png')
 
-model3wv = pd.DataFrame({"wv nbn loss":0.2250 , "wv nbn acc": 0.92580},index=[0])
+model3wv = pd.DataFrame({"wv loss":0.2250 , "wv acc": 0.92580},index=[0])
 st.dataframe(model3wv)
 
 
@@ -55,7 +55,7 @@ model_wv_yeni2.summary()
 st.subheader('CNN2 Wavelet graphs')
 st.image('cnn_img/model_cnn2_full.png')
 
-model3wv = pd.DataFrame({"wv nbn loss":0.2189 , "wv nbn acc": 0.9265},index=[0])
+model3wv = pd.DataFrame({"wv loss":0.2189 , "wv  acc": 0.9265},index=[0])
 st.dataframe(model3wv)
 
 
@@ -80,5 +80,5 @@ modelwv.summary()
 st.subheader('CNN3 Wavelet graphs')
 st.image('cnn_img/model_cnn3_full.png')
 
-model3wv = pd.DataFrame({"wv nbn loss":0.2303 , "wv nbn acc": 0.925236},index=[0])
+model3wv = pd.DataFrame({"wv loss":0.2303 , "wv acc": 0.925236},index=[0])
 st.dataframe(model3wv)
