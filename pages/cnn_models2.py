@@ -78,6 +78,8 @@ st.image('img_graph/12864_wv_nobn_full.png')
 st.subheader('wv bn')
 st.image('img_graph/m2_wv_bn.png')
 
+st.subheader('classification reports nobn')
+st.image('class_reports/model_5.png')
 
 
 
@@ -150,3 +152,5 @@ st.image('img_graph/m8wvnbnfull.png')
 st.subheader('wv bn')
 st.image('img_graph/m8wvbnfull.png')
 
+st.subheader('classification reports nobn')
+st.image('class_reports/model_6.png')
