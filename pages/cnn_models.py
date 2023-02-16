@@ -97,7 +97,8 @@ st.subheader('model 1 bn wavelet')
 st.image('img_graph/m2_wv_bn.png')
 st.dataframe(model2)
 st.dataframe(model2wv)
-
+st.subheader('classification reports nobn')
+st.image('class_reports/model_1.png')
 
 st.subheader('model 2 bn')
 st.code('''
@@ -150,6 +151,10 @@ st.subheader('model 2 bn wavelet')
 st.image('img_graph/m3_wv_bn.png')
 st.dataframe(model3)
 st.dataframe(model3wv)
+
+st.subheader('classification reports nobn')
+st.image('class_reports/model_2.png')
+
 
 st.subheader('model 3 bn')
 st.code(''' model_tf3 = Sequential()
@@ -214,6 +219,8 @@ st.subheader('model 3 bn wavelet')
 st.image('img_graph/m4_wv_bn.png')
 st.dataframe(model4)
 st.dataframe(model4wv)
+st.subheader('classification reports nobn')
+st.image('class_reports/model_3.png')
 
 
 st.subheader('model 4 bn')
@@ -273,6 +280,10 @@ st.subheader('model 4 bn wavelet')
 st.image('img_graph/m5_wv_bn.png')
 st.dataframe(model5)
 st.dataframe(model5wv)
+
+st.subheader('classification reports nobn')
+st.image('class_reports/model_4.png')
+
 
 
 
