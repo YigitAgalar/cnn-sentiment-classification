@@ -64,6 +64,16 @@ Non-trainable params: 0
 _________________________________________________________________
 
 ''')
+
+
+st.code('''{
+'units': 1024,
+ 'activation': 'relu',
+ 'n_layers': 0,
+ 'dropout_last': 0.9,
+ 'lstm_units_last': 128,
+ 'learning_rate': 0.001,
+ }''')
 model1= pd.DataFrame({'chi2 loss' :0.1144 , 'chi2 acc': 0.9613},index=[0])
 model1wv = pd.DataFrame({"wv loss":0.1800 , "wv acc": 0.9434},index=[0])
 st.write("model1 chi2 input graphs")
@@ -94,6 +104,15 @@ Non-trainable params: 0
 _________________________________________________________________
    
 ''')
+
+st.code('''{
+'units': 128,
+ 'activation': 'relu',
+ 'n_layers': 0,
+ 'dropout_last': 0.5,
+ 'lstm_units_last': 8,
+ 'learning_rate': 0.001
+ }''')
 
 
 model2= pd.DataFrame({'chi2 loss' :0.1473 , 'chi2 acc': 0.9557},index=[0])
@@ -132,6 +151,17 @@ Non-trainable params: 0
 _________________________________________________________________
 ''')
 
+st.code('''{
+ 'units': 128,
+ 'activation': 'sigmoid',
+ 'n_layers': 1,
+ 'dropout_last': 0.7000000000000001,
+ 'lstm_units_last': 64,
+ 'learning_rate': 0.01,
+ 'dropout0': 0.4,
+ 'lstm_units0': 256,
+ }''')
+
 model3= pd.DataFrame({'chi2 loss' :0.1612 , 'chi2 acc': 0.9525},index=[0])
 model3wv = pd.DataFrame({"wv loss":0.1824 , "wv acc": 0.9395},index=[0])
 st.write("model3 chi2 input graphs")
@@ -169,6 +199,17 @@ Non-trainable params: 0
 _________________________________________________________________
 ''')
 
+st.code('''{
+ 'units': 32,
+ 'activation': 'tanh',
+ 'n_layers': 1,
+ 'dropout_last': 0.7000000000000001,
+ 'lstm_units_last': 16,
+ 'learning_rate': 0.001,
+ 'dropout0': 0.5,
+ 'lstm_units0': 512,
+ }''')
+ 
 model4= pd.DataFrame({'chi2 loss' :0.1616 , 'chi2 acc': 0.9508},index=[0])
 model4wv = pd.DataFrame({"wv loss":0.1952 , "wv acc": 0.9338},index=[0])
 st.write("model4 chi2 input graphs")
@@ -207,6 +248,21 @@ Trainable params: 189,623,299
 Non-trainable params: 0
 _________________________________________________________________
 ''')
+
+
+st.code('''{
+'units': 1024,
+ 'activation': 'relu',
+ 'n_layers': 2,
+ 'dropout_last': 0.30000000000000004,
+ 'lstm_units_last': 256,
+ 'learning_rate': 0.001,
+ 'dropout0': 0.1,
+ 'lstm_units0': 256,
+ 'dropout1': 0.4,
+ 'lstm_units1': 64,
+ 'dropout2': 0.1,
+ }''')
 
 model5= pd.DataFrame({'chi2 loss' :0.1650 , 'chi2 acc': 0.9490},index=[0])
 model5wv = pd.DataFrame({"wv loss":0.1966 , "wv acc": 0.9369},index=[0])
